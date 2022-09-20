@@ -1,0 +1,413 @@
+/* Author : Nimisha Gosain */
+
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;500;600&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+
+header {
+  padding: 10px;
+  background-color: midnightblue;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+header h1 {
+  padding-top: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+}
+
+/* Putting the body in container and placing in the middle */
+body {
+  border: 2px solid black;
+  box-shadow: 5px 0 10px 5px grey;
+  border-radius: 10px;
+  width: 1100px;
+  margin: auto;
+  clear: both;
+  font-size: 18px;
+  font-family: "Gentium Plus", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav {
+  font-size: 60px;
+  border: 2px solid white;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-flex;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+/* Adding hover effect to nav items */
+nav a:hover {
+  background-color: lightpink;
+  color: black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 50px;
+  font-weight: bold;
+  display: inline-flex;
+}
+
+/* Adding hover effect to nav items */
+nav ul li:hover ul {
+  display: block;
+  top: 66px;
+  padding: 0;
+  background-color: darkblue;
+  border: 2px solid black;
+  z-index: 100; /*done to make the sub menu appear over the layer2 of the hero image*/
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+/* To add parallax effect to the hero image  */
+.parallax_section {
+  background-image: url("../image/NiagaraFalls.jpg");
+  color: white;
+  font-size: 36px;
+  background-attachment: fixed;
+  /* background-position: center; */
+  text-align: center;
+  padding: 100px;
+}
+
+.hero-image-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  height: inherit;
+}
+
+.hero-image-section img {
+  width: 100%;
+}
+
+.content-section1 {
+  text-align: center;
+  padding: 10px;
+}
+/* Formatting contents display  */
+.content-section2,
+.content-section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 10px 20px;
+}
+
+.content-section2a {
+  padding-top: 20px;
+}
+/* Adding clip path to the image */
+.content-section2b img {
+  width: 480px;
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+/* Adding clip path to the image */
+.content-section3a img {
+  width: 480px;
+  padding: 20px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.heading {
+  text-align: center;
+}
+.box-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+/* Formatting the images in the cards */
+.box-card1 img,
+.box-card2 img,
+.box-card3 img {
+  width: 90%;
+  padding: 15px;
+}
+
+/* Formatting the cards */
+.box-card1,
+.box-card2,
+.box-card3 {
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 0 5px grey;
+}
+
+.inner-content {
+  padding: 10px 30px;
+}
+
+button {
+  padding: 10px;
+  border: 2px solid black;
+  background-color: lightpink;
+}
+
+button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+
+/* hover effect on the button */
+button a:hover {
+  background-color: aliceblue;
+}
+
+.menu-list-section {
+  padding: 0;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 2px solid black;
+  padding: 30px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+.list-content {
+  text-align: center;
+}
+
+.list-content ul a li {
+  list-style: none;
+  padding-right: 40px;
+}
+
+.list-content ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Adding background while hovering over list contents */
+.list-content ul a :hover {
+  background-color: cornflowerblue;
+}
+
+.image-section img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+/* To create a box with image and an overlay on it */
+.parent_layer {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.layer2 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  right: 0px;
+  background-color: rgb(64 25 25 / 50%);
+}
+
+.layer2 h2 {
+  text-align: center;
+  font-style: italic;
+  color: whitesmoke;
+  font-size: 40px;
+  padding: 100px;
+}
+
+.layer1 img {
+  display: block;
+}
+
+.padding-class {
+  padding-top: 30px;
+}
+
+/* Formatting table */
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+
+thead th {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+/* formatting child items */
+tbody tr:nth-child(even) td,
+tbody tr:nth-child(even) th {
+  background-color: rgb(150, 180, 236);
+}
+
+table {
+  width: 100%;
+}
+
+.table-section {
+  padding-bottom: 20px;
+}
+
+#form-section {
+  padding-bottom: 40px;
+}
+
+/* Formatting the form */
+form {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 0 10px 0 grey;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "field1 field2"
+    "field3 field3";
+}
+
+#field1 {
+  grid-area: field1;
+}
+#field2 {
+  grid-area: field2;
+}
+#field3 {
+  grid-area: field3;
+  padding: 20px 100px;
+}
+
+.buttons-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-field {
+  display: grid;
+  grid-column: 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+.checkbox-field {
+  padding: 10px;
+}
+
+input,
+select,
+.checkbox-field,
+textarea,
+fieldset {
+  font-size: 18px;
+  border: 2px solid black;
+}
+
+.buttons-field input {
+  width: 300px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 2px 3px 0 black;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  border-top: 2px solid black;
+  padding: 10px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+/* Adding below formatting for creating a responsive web page */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  body {
+    width: 96%;
+    padding: 2%;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .content-section2,
+  .content-section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 96%;
+    padding: 2%;
+  }
+
+  .box-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .buttons-field {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .content-section2,
+  .content-section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
