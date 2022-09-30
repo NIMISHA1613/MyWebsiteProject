@@ -10,3 +10,5 @@ Building steps are as follow :
 Install/ usage step of project:
 clone the code in your git bash terminal using the following code => git clone "https://github.com/NIMISHA56/MyWebsiteProject.git" .
 The above mentioned URL is the URL to this project code, using which the code can be cloned.
+
+Added MIT license as open source software license to this project as it gives users the permission to reuse the code for any purpose, it is easily available and is widely used and acceptable.
